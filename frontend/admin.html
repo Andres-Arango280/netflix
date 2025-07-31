@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Netflix Clon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="home.html">Netflix Clon</a></div>
+        <nav>
+            <button id="logoutBtn">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main class="admin-panel-container">
+        <h1>Panel de Administración</h1>
+
+        <section>
+            <h2>Añadir Nueva Película</h2>
+            <form id="addMovieForm">
+                <input type="text" id="movieTitle" placeholder="Título de la Película" required>
+                <textarea id="movieDescription" placeholder="Descripción de la Película" required></textarea>
+                <input type="url" id="movieUrl" placeholder="URL del Video (ej. embed de YouTube)" required>
+                <input type="url" id="movieThumbnail" placeholder="URL de la Miniatura (imagen)" required>
+                <button type="submit">Añadir Película</button>
+            </form>
+            <div id="message" class="message"></div>
+        </section>
+
+        <hr style="border: 1px solid #333; width: 100%; margin: 40px 0;">
+
+        <section>
+            <h2>Películas Existentes</h2>
+            <div class="movie-list">
+                <ul id="adminMoviesList">
+                    </ul>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

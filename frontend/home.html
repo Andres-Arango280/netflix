@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix Clon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Netflix Clon</div>
+        <div class="search-bar">
+            <input type="text" id="searchMovie" placeholder="Buscar películas...">
+        </div>
+        <nav>
+            <button id="logoutBtn">Cerrar Sesión</button>
+            <button id="adminPanelBtn" style="display: none;">Panel Admin</button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="movie-section">
+            <h2>Películas Más Vistas</h2>
+            <div id="popularMovies" class="movie-grid">
+                </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>Todas las Películas</h2>
+            <div id="allMovies" class="movie-grid">
+                </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
